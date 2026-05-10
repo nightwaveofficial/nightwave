@@ -423,14 +423,19 @@ document.getElementById("banner").src = banners[i];
 
 }, 3000);
 
-</script>
 <script>
 
 function openMenu(){
-alert("Sidebar Menu Coming Soon");
+document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeMenu(){
+document.getElementById("sidebar").style.width = "0";
 }
 
 </script>
+
+
 </body>
 </html>
 <a href="login.html">Login</a>
