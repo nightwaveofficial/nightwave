@@ -33,7 +33,9 @@ border-radius:20px;
 <body>
 
 <h1>Now Playing</h1>
-
+<button onclick="subscribeChannel(this)" style="padding:12px 25px;background:red;border:none;border-radius:10px;color:white;font-size:18px;margin-bottom:20px;">
+🔔 Subscribe
+</button>
 <video controls>
 
 <
@@ -67,6 +69,16 @@ comments.innerHTML += "<p style='background:#111827;padding:10px;border-radius:1
 input.value = "";
 
 }
+
+}
+
+</script>
+
+
+function subscribeChannel(btn){
+
+btn.innerHTML = "✅ Subscribed";
+btn.style.background = "green";
 
 }
 
