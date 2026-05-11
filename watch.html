@@ -39,6 +39,37 @@ border-radius:20px;
 <
 
 </video>
+<div style="margin-top:30px;">
 
+<h2 style="color:#8b5cf6;">Comments</h2>
+
+<input type="text" id="commentInput" placeholder="Write a comment..." style="padding:12px;width:300px;border:none;border-radius:10px;">
+
+<button onclick="addComment()" style="padding:12px 20px;background:#8b5cf6;border:none;border-radius:10px;color:white;">
+Post
+</button>
+
+<div id="comments" style="margin-top:20px;"></div>
+
+</div>
+<script>
+
+function addComment(){
+
+let input = document.getElementById("commentInput");
+
+let comments = document.getElementById("comments");
+
+if(input.value !== ""){
+
+comments.innerHTML += "<p style='background:#111827;padding:10px;border-radius:10px;margin-top:10px;'>" + input.value + "</p>";
+
+input.value = "";
+
+}
+
+}
+
+</script>
 </body>
 </html>
